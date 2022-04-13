@@ -1,0 +1,205 @@
+/*estilos generales*/
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*NavBar*/
+
+.container{
+    position: absolute;
+    justify-content: center;
+}
+
+
+/*Titulo Centrado*/
+
+.tituloHeader{
+    align-items: center;
+    padding-left: 50%;
+}
+
+.titulo2{
+    align-items: center;
+    padding-left: 50%;
+}
+
+/*Header*/
+
+.body{
+    background-image: linear-gradient(blue, skyblue, rgb(39, 97, 163), white);
+}
+.border{
+    border: solid 1px black;
+}
+span{
+    background-color: rgb(17, 0, 255);
+    margin: 5px;
+    padding: 5px 25px;
+    color: white;
+}
+span:hover{
+    opacity: 10;
+    cursor: pointer;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.fondo-imagen{
+    padding: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 50vw;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+
+.padding {
+    display: flex;
+    flex-flow: row wrap;
+
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.margen {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 100px;
+    margin-bottom: 10%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.cajaUno {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    /* height: 50vh; */
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.borde-bordo {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid 1px rgb(128, 0, 21);
+}
+
+p{
+    color: aliceblue;
+}
+
+    
+/***GRIDS POR AREAS***/
+#grid-area{
+    display: grid;
+    /*estructura de grid por areas*/
+    grid-template-areas: 
+    
+    /*1 columna y 1 fila*/
+    "cabeza"
+    "menu"
+    "imagenfondo"
+    "main"
+    "footer"
+
+    ;
+}    
+    
+    /*espacios*/
+    
+   
+/*nombrar cada area*/    
+header{
+    grid-area: cabeza ;
+    display: flex;
+    flex-flow: row wrap;
+ text-align: center center;   
+
+} 
+nav{
+    grid-area: menu;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+     text-align: center ;
+}     
+
+div{
+    grid-area: imagenfondo;
+    display: flex;
+    flex-flow: row wrap;
+}    
+main{
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px;
+}    
+ 
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+}    
+
+
+
+.grid-historia{
+    display: grid;
+  grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*mobile first*/
+/*Smartphone*/
+@media(min-width:280px){
+    .titulo2{
+        align-items: center;
+        padding-left: 30%;
+    }
+}
+
+/*tablet*/
+@media(min-width:481px){
+    .titulo2{
+        align-items: center;
+        padding-left: 40%;
+    }
+}
+
+/*desktop*/
+@media(min-width:1024px){
+    .titulo2{
+        align-items: center;
+        padding-left: 45%;
+    }
+}
